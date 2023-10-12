@@ -8,8 +8,12 @@ const Temp = () => {
 
   const getWeatherInfo = async () => {
     try {
+<<<<<<< HEAD
       // let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=1185842f6398a4b7862f2d9094c6d3d8`;
       let url=`https:api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid=f3c2e8aa80a4227428ca3e42286e8763`;
+=======
+      let url = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={f3c2e8aa80a4227428ca3e42286e8763}`;
+>>>>>>> 3f7d5f8a6983f97f161435d6fd3145a7a2170c65
 
       let res = await fetch(url);
       let data = await res.json();
